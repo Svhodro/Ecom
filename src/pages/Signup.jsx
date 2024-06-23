@@ -101,7 +101,7 @@ function Signup() {
                     name="pass"
                     required
                   />
-                  {alart ? (
+                  {alart ? 
                     <div role="alert" className="alert alert-error py-2 my-2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -118,9 +118,9 @@ function Signup() {
                       </svg>
                       <span>Invalid password. </span>
                     </div>
-                  ) : (
+                  :
                     <h1 className="hidden"></h1>
-                  )}
+                  }
                 </div>
                 <div className="form-control mt-6">
                   <button className="btn btn-primary">Register</button>
