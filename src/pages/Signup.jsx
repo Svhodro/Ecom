@@ -9,8 +9,7 @@ import { ProductContext } from "../contexts/ProductContext";
 
 function Signup() {
   const [alart, setalart] = useState();
-  const navigate = useNavigate();
-  const { user, setuser } = useContext(ProductContext);
+  const navigate = useNavigate(); 
   const notify = () => toast("Registration Sucsess!");
   const checkPassword = (password) => {
     // Check if the password length is at least 6 characters
@@ -43,8 +42,7 @@ function Signup() {
       const auth = getAuth(app);
       createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
-          // Signed up
-          const user = userCredential.user;
+          // Signed up          
           // ...
           notify();
           

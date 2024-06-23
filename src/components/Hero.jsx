@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../img/woman_hero.png";
+
 const Hero = () => {
   return (
     <div className="w-full h-full bg-slate-700 bg-hero p-0">
