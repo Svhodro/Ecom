@@ -15,6 +15,7 @@ const Product = ({ product }) => {
             <Link to={`/product/${id}`}>
             <img
               src={image}
+              alt="img"
               className="max-h-[160px] group-hover:scale-110 transition duration-300 "
             />
             </Link>

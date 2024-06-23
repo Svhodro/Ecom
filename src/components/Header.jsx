@@ -39,7 +39,7 @@ const Header = () => {
     <div className={`${isactive?' py-2 shadow-md bg-white':'bg-white py-3 '} fixed w-full flex justify-between px-4 z-20 `}>
       <div>
         <Link to='/'>
-        <img src={logo} className="w-10"/>
+        <img src={logo} alt="img" className="w-10"/>
         </Link>
       </div>
       <div className="flex justify-center gap-2 items-center">
