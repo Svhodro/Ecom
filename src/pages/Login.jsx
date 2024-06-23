@@ -1,6 +1,5 @@
 
-import React, { useState, useEffect, useContext } from "react";
-import { FcGoogle } from "react-icons/fc";
+import React, {  useContext } from "react";
 import { Link, useNavigate } from 'react-router-dom'
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { ToastContainer, toast } from 'react-toastify';
