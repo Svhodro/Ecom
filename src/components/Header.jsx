@@ -39,14 +39,12 @@ const Header = () => {
     <div className={`${isactive?' py-2 shadow-md bg-white':'bg-white py-3 '} fixed w-full flex justify-between px-4 z-20 `}>
       <div>
         <Link to='/'>
-        <img src={logo} alt="img" className="w-10"/>
+        <img src={logo} alt="" className="w-10"/>
         </Link>
       </div>
       <div className="flex justify-center gap-2 items-center">
       <div
-        onClick={() => {
-          setIsopen(!isopen);
-        }}
+        
       >
         {data?<FiLogOut className="text-3xl cursor-pointer" onClick={handlelogout}/>:<div></div>}
         
@@ -54,7 +52,9 @@ const Header = () => {
         <div className="w-6 bg-slate-900 text-white rounded-full text-center absolute right-3 top-8 ">{cartAmount}</div>
 
       </div>
-      <AiOutlineShopping className="text-4xl cursor-pointer" />  
+      <AiOutlineShopping className="text-4xl cursor-pointer" onClick={() => {
+          setIsopen(!isopen);
+        }}/>  
       </div>
     
       
