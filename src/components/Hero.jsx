@@ -1,4 +1,5 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
@@ -14,7 +15,13 @@ const Hero = () => {
         </div>
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
           <h1 className="text-2xl md:text-4xl  font-bold leading-tight mb-4 px-4 sm:p-0">
-            Welcome to Our Awesome Website
+            <Typewriter
+              options={{
+                strings: [" Welcome to Our", "Awesome Website"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </h1>
           <p className="text-lg text-gray-300 mb-8">
             Discover amazing features and services that await you.
